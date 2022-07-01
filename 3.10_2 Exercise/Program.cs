@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _3._10_2_Exercise
 {
@@ -11,7 +7,7 @@ namespace _3._10_2_Exercise
         static void Main(string[] args)
         {
             Console.WriteLine($"Добро пожаловать в игру Blackjack!");
-            Console.Write($"\nВведите кол-во карт у вас на руках: "); 
+            Console.Write($"\nВведите кол-во карт у вас на руках: ");
             int countCard = Convert.ToInt32(Console.ReadLine());
             int sumValue = 0;
             int value = 0;
@@ -48,17 +44,9 @@ namespace _3._10_2_Exercise
                         value = 9;
                         break;
                     case "10":
-                        value = 10;
-                        break;
                     case "J":
-                        value = 10;
-                        break;
                     case "Q":
-                        value = 10;
-                        break;
                     case "K":
-                        value = 10;
-                        break;
                     case "T":
                         value = 10;
                         break;
@@ -70,7 +58,7 @@ namespace _3._10_2_Exercise
                 sumValue += value;
 
             }
-            
+
             Console.WriteLine($"\nСумма ваших карт = {sumValue}");
             Console.ReadKey();
         }

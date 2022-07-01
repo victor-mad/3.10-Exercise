@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _3._10_3_Exercise
 {
@@ -16,7 +12,7 @@ namespace _3._10_3_Exercise
             bool primeNumber = true;
 
             int i = 2;
-            while (i <= number - 1)
+            while (i <= number / i)
             {
                 if (number % i == 0)
                 {
@@ -27,13 +23,13 @@ namespace _3._10_3_Exercise
             }
             if (primeNumber)
             {
-                    Console.WriteLine($"\nЧисло {number} простое");
+                Console.WriteLine($"\nЧисло {number} простое");
             }
             else
             {
-                    Console.WriteLine($"\nЧисло {number} не простое");
+                Console.WriteLine($"\nЧисло {number} не простое");
             }
-               
+
             Console.ReadKey();
         }
     }
